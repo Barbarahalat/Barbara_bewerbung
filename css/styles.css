@@ -1,0 +1,259 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Basic styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f4ee;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #336b87, #90afc5, #763626);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.block {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #f0ece2;
+}
+
+.block h2 {
+  color: #336b87;
+  margin-top: 0;
+  border-bottom: 2px solid #f7f4ee;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Split content layout */
+.content-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.content-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.content-image {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Improved Images - Profile Image Fix */
+.profile-image {
+  width: auto;  /* Automatische Breite statt festgelegt */
+  max-width: 220px;  /* Maximale Breite */
+  height: auto;  /* Automatische Höhe für korrektes Seitenverhältnis */
+  max-height: 300px;  /* Maximale Höhe, damit das Bild nicht zu groß wird */
+  object-fit: contain;  /* Vollständige Anzeige des Bildes ohne Abschneiden */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 3px solid #f7f4ee;
+  margin-bottom: 0.5rem; /* Zusätzlicher Abstand zum Upload-Button */
+}
+
+.content-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #f0ece2;
+}
+
+/* Interactive elements */
+button {
+  background: #336b87;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #763626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-content {
+  display: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f7f4ee;
+  border-radius: 8px;
+  border: 1px solid #f0ece2;
+}
+
+/* Skill tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.skill-tag {
+  background: #90afc5;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlight text */
+.highlight {
+  color: #763626;
+  font-weight: 600;
+}
+
+/* Game section */
+.game-section {
+  background: #f7f4ee;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #f0ece2;
+}
+
+.game-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid #f0ece2;
+  transition: opacity 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #336b87, #90afc5);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Button styles */
+.button {
+  background: #336b87;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background: #763626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.upload-link {
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%; /* Volle Breite im Containerbereich */
+}
+
+/* Verbesserte Upload-Button-Styles */
+.upload-button {
+  background: rgba(51, 107, 135, 0.9);
+  border: 1px solid #336b87;
+  color: white;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.upload-button:hover {
+  background: rgba(118, 54, 38, 0.9);
+  border-color: #763626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.upload-button i {
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content-split {
+    flex-direction: column-reverse;
+  }
+  
+  .content-image {
+    margin-bottom: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .block {
+    padding: 1.5rem;
+  }
+} 

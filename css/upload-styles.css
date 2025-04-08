@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f7f4ee, #f0ece2);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: #336b87;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #666;
+  margin-top: 0;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+  border: 1px solid #f0ece2;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #336b87;
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f7f4ee;
+  padding-bottom: 0.5rem;
+}
+
+.upload-zone {
+  border: 2px dashed #336b87;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  background: #f7f4ee;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-zone:hover {
+  border-color: #763626;
+  background: #f0ece2;
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+  color: #336b87;
+  margin-bottom: 1rem;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button {
+  background: #336b87;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.upload-button:hover {
+  background: #763626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.success {
+  color: #2d6a4f;
+  font-weight: 600;
+  background: rgba(45, 106, 79, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(45, 106, 79, 0.2);
+}
+
+.error {
+  color: #9b2226;
+  font-weight: 600;
+  background: rgba(155, 34, 38, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(155, 34, 38, 0.2);
+}
+
+.note {
+  color: #336b87;
+  background: rgba(51, 107, 135, 0.1);
+  padding: 1rem;
+  border-radius: 8px; 
+  margin: 1rem 0;
+  border: 1px solid rgba(51, 107, 135, 0.2);
+}
+
+.preview {
+  margin-top: 2rem;
+}
+
+.preview h3 {
+  color: #336b87;
+  margin-bottom: 1rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0ece2;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #336b87;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #763626;
+}
+
+.file-name {
+  color: #336b87;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.instructions {
+  padding: 1rem;
+  background: #f7f4ee;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 1px solid #f0ece2;
+}
+
+.instructions h3 {
+  color: #336b87;
+  margin-top: 0;
+}
+
+.instructions ol {
+  padding-left: 1.5rem;
+}
+
+.instructions li {
+  margin-bottom: 0.5rem;
+}
+
+.supported-formats {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.format-tag {
+  background: #f0ece2;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #336b87;
+  font-weight: 600;
+  border: 1px solid #e6e2d9;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Styling for image preview */
+.image-preview {
+  margin-top: 1rem;
+  text-align: center;
+  display: none;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(247, 244, 238, 0.5);
+  padding: 0.5rem;
+  border: 1px solid #f0ece2;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 250px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+} 

@@ -1,0 +1,34 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" fill="#f7f4ee"/>
+  
+  <!-- Roboterkörper -->
+  <rect x="80" y="80" width="80" height="100" rx="10" fill="#336b87"/>
+  <rect x="90" y="90" width="60" height="80" rx="5" fill="#f7f4ee"/>
+  
+  <!-- Roboterkopf -->
+  <rect x="90" y="40" width="60" height="40" rx="10" fill="#763626"/>
+  <rect x="95" y="45" width="50" height="30" rx="5" fill="#f7f4ee"/>
+  
+  <!-- Augen -->
+  <circle cx="110" cy="60" r="5" fill="#c44536"/>
+  <circle cx="130" cy="60" r="5" fill="#c44536"/>
+  
+  <!-- Antennen -->
+  <line x1="100" y1="40" x2="90" y2="20" stroke="#763626" stroke-width="3"/>
+  <circle cx="90" cy="20" r="5" fill="#c44536"/>
+  <line x1="140" y1="40" x2="150" y2="20" stroke="#763626" stroke-width="3"/>
+  <circle cx="150" cy="20" r="5" fill="#c44536"/>
+  
+  <!-- Arme -->
+  <line x1="80" y1="100" x2="50" y2="120" stroke="#336b87" stroke-width="8" stroke-linecap="round"/>
+  <line x1="50" y1="120" x2="40" y2="150" stroke="#336b87" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="40" cy="150" r="10" fill="#763626"/>
+  
+  <line x1="160" y1="100" x2="190" y2="120" stroke="#336b87" stroke-width="8" stroke-linecap="round"/>
+  <line x1="190" y1="120" x2="200" y2="150" stroke="#336b87" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="10" fill="#763626"/>
+  
+  <!-- Beine -->
+  <rect x="90" y="180" width="20" height="40" rx="5" fill="#763626"/>
+  <rect x="130" y="180" width="20" height="40" rx="5" fill="#763626"/>
+</svg>

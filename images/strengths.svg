@@ -1,0 +1,23 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="strengths-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7F00FF" />
+      <stop offset="50%" stop-color="#00E1FF" />
+      <stop offset="100%" stop-color="#00FF8F" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="url(#strengths-gradient)" stroke-width="5" stroke-dasharray="5,5" />
+  <g fill="url(#strengths-gradient)">
+    <circle cx="100" cy="50" r="20" />
+    <circle cx="50" cy="100" r="20" />
+    <circle cx="150" cy="100" r="20" />
+    <circle cx="100" cy="150" r="20" />
+  </g>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">Kreativität</text>
+  <text x="50" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">Digital</text>
+  <text x="150" y="105" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">Kommunikation</text>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">Lernbereitschaft</text>
+  <text x="100" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#00E1FF" font-weight="bold">
+    Meine Stärken
+  </text>
+</svg>

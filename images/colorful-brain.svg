@@ -1,0 +1,38 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" fill="#f7f4ee"/>
+  
+  <!-- Gehirnform -->
+  <path d="M120,50 
+          C160,50 180,70 180,100
+          C180,120 170,140 150,150
+          C170,160 180,180 160,200
+          C140,220 100,220 80,200
+          C60,180 70,160 90,150
+          C70,140 60,120 60,100
+          C60,70 80,50 120,50Z" 
+        fill="#f7f4ee" stroke="#336b87" stroke-width="3"/>
+  
+  <!-- Farbige kreisförmige Bereiche -->
+  <circle cx="90" cy="90" r="20" fill="#c44536" opacity="0.6"/>
+  <circle cx="150" cy="90" r="20" fill="#763626" opacity="0.6"/>
+  <circle cx="120" cy="120" r="25" fill="#336b87" opacity="0.6"/>
+  <circle cx="90" cy="150" r="18" fill="#90afc5" opacity="0.6"/>
+  <circle cx="150" cy="150" r="18" fill="#c44536" opacity="0.6"/>
+  <circle cx="120" cy="180" r="22" fill="#763626" opacity="0.6"/>
+  
+  <!-- Verbindungslinien (Neuronen) -->
+  <line x1="90" y1="90" x2="120" y2="120" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  <line x1="150" y1="90" x2="120" y2="120" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  <line x1="120" y1="120" x2="90" y2="150" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  <line x1="120" y1="120" x2="150" y2="150" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  <line x1="90" y1="150" x2="120" y2="180" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  <line x1="150" y1="150" x2="120" y2="180" stroke="#333" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- Kreise für Neuronenverbindungen -->
+  <circle cx="105" cy="105" r="3" fill="#333" opacity="0.5"/>
+  <circle cx="135" cy="105" r="3" fill="#333" opacity="0.5"/>
+  <circle cx="105" cy="135" r="3" fill="#333" opacity="0.5"/>
+  <circle cx="135" cy="135" r="3" fill="#333" opacity="0.5"/>
+  <circle cx="105" cy="165" r="3" fill="#333" opacity="0.5"/>
+  <circle cx="135" cy="165" r="3" fill="#333" opacity="0.5"/>
+</svg>

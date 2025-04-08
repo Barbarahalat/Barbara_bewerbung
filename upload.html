@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto hochladen - Barbara vs. KI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/upload-styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Profilbild hochladen</h1>
+      <p>Laden Sie ein neues Profilbild für die Bewerbungsseite hoch</p>
+    </header>
+    
+    <div class="card">
+      <h2>Neues Foto hochladen</h2>
+      
+      <div class="instructions">
+        <h3>Anleitung:</h3>
+        <ol>
+          <li>Klicken Sie unten auf die Upload-Zone oder den Button.</li>
+          <li>Wählen Sie ein Bild von Ihrem Gerät aus.</li>
+          <li>Klicken Sie "Hochladen", um das Bild zu verwenden.</li>
+        </ol>
+        <div class="supported-formats">
+          <span class="format-tag">JPG</span>
+          <span class="format-tag">PNG</span>
+          <span class="format-tag">GIF</span>
+          <span class="format-tag">SVG</span>
+        </div>
+      </div>
+      
+      <!-- Hinweis für GitHub Pages Nutzer -->
+      <div class="note">
+        <p><strong>Hinweis:</strong> Da diese Seite auf GitHub Pages gehostet wird, ist die Upload-Funktion deaktiviert. 
+        In einer lokalen Entwicklungsumgebung oder auf einem Server mit Backend würde diese Funktion Bilder hochladen können.</p>
+      </div>
+      
+      <div id="uploadZone" class="upload-zone">
+        <div class="upload-icon">
+          <i class="fas fa-cloud-upload-alt"></i>
+        </div>
+        <p>Ziehen Sie Ihr Bild hierher oder klicken Sie, um ein Bild auszuwählen</p>
+        <input type="file" id="fileInput" class="file-input" accept="image/*">
+      </div>
+      
+      <div class="text-center">
+        <button type="button" id="uploadButton" class="upload-button" disabled>
+          <i class="fas fa-upload"></i> Hochladen
+        </button>
+      </div>
+      
+      <div id="imagePreview" class="image-preview">
+        <img id="previewImg" src="" alt="Bildvorschau">
+        <p id="fileName" class="file-name"></p>
+      </div>
+      
+      <!-- Erfolgs- oder Fehlermeldung -->
+      <div id="responseMessage"></div>
+    </div>
+    
+    <a href="index.html" class="back-link">
+      <i class="fas fa-arrow-left"></i> Zurück zur Hauptseite
+    </a>
+    
+    <div class="preview">
+      <h3>Aktuelles Profilbild</h3>
+      <img class="preview-image" src="images/barbara-profile.png" alt="Aktuelles Profilbild">
+    </div>
+  </div>
+  
+  <script src="js/upload-helper.js"></script>
+</body>
+</html> 
