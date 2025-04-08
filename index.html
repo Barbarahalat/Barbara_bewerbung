@@ -1,1 +1,108 @@
- 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbara vs. KI – Bewerbung</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Barbara vs. KI</h1>
+    <p>Eine kreative Bewerbung für die Summer University 2025</p>
+  </header>
+
+  <section>
+    <div class="block">
+      <h2>Über mich</h2>
+      <div class="content-split">
+        <div class="content-text">
+          <p>Mein Name ist <strong>Barbara Halat</strong> – Medienmanagement-Studentin mit einem Auge für kreative Lösungen, einem Verständnis für digitale Trends und einer Leidenschaft für innovative Ideen.</p>
+          
+          <div class="skill-tags">
+            <span class="skill-tag">Kreativität</span>
+            <span class="skill-tag">Digitale Medien</span>
+            <span class="skill-tag">Design</span>
+            <span class="skill-tag">Kommunikation</span>
+            <span class="skill-tag">Innovation</span>
+          </div>
+          
+          <p>Ich verbinde menschliche Kreativität mit digitalen Werkzeugen, um einzigartige Lösungen zu entwickeln. Was mich ausmacht? Die Fähigkeit, <span class="highlight">kreative Visionen</span> in strukturierte Prozesse zu übersetzen und dabei die Balance zwischen Innovation und Umsetzbarkeit zu wahren.</p>
+        </div>
+        <div class="content-image" style="min-height: 320px;">
+          <img src="images/barbara-profile.png" alt="Barbara Halat" class="profile-image">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>KI-Perspektive</h2>
+      <div class="content-split">
+        <div class="content-text">
+          <p>Wie würde eine KI meine Fähigkeiten beschreiben? Ich habe genau diese Frage gestellt und eine interessante Antwort erhalten.</p>
+          <button onclick="toggleText('kiText')">KI-Analyse anzeigen <i class="fas fa-robot"></i></button>
+          <div id="kiText" class="toggle-content">
+            <p><em>"Barbara verbindet analytisches Denken mit kreativer Intuition. In einer Zeit, in der beide Qualitäten immer wichtiger werden, schafft sie es, zwischen technologischem Fortschritt und menschlicher Kreativität zu vermitteln."</em></p>
+            <p><em>"Ihre Fähigkeit, komplexe Informationen zu verarbeiten und in zugängliche Botschaften zu transformieren, gepaart mit ihrer natürlichen Neugierde, macht sie zu einer idealen Kandidatin für zukunftsorientierte Projekte im Bereich Medien und Kommunikation."</em></p>
+          </div>
+        </div>
+        <div class="content-image" style="min-height: 320px;">
+          <img src="images/colorful-brain.svg" alt="KI-Analyse" class="content-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Warum die Summer University?</h2>
+      <div class="content-split">
+        <div class="content-text">
+          <p>Die Summer University bietet eine einzigartige Plattform für den Austausch mit Gleichgesinnten und Experten. Ich bin überzeugt, dass ich sowohl wertvolle Einsichten gewinnen als auch meine eigenen Perspektiven einbringen kann.</p>
+          <button onclick="toggleText('motivationText')">Meine Motivation <i class="fas fa-heart"></i></button>
+          <div id="motivationText" class="toggle-content">
+            <p>Was mich besonders an der Summer University reizt:</p>
+            <ul>
+              <li>Die Möglichkeit, mit führenden Experten aus der Kreativbranche in Kontakt zu treten</li>
+              <li>Der interdisziplinäre Ansatz, der verschiedene Perspektiven zusammenbringt</li>
+              <li>Die praktische Ausrichtung, die Theorie und Anwendung verbindet</li>
+              <li>Die inspirierende Atmosphäre, die neue Ideen fördert</li>
+            </ul>
+            <p>Mein Ziel ist es, meine Fähigkeiten weiterzuentwickeln und neue Impulse für meine zukünftige Arbeit an der Schnittstelle von Kreativität und Technologie zu gewinnen.</p>
+          </div>
+        </div>
+        <div class="content-image" style="min-height: 320px;">
+          <img src="images/university.svg" alt="Summer University" class="content-img">
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Mensch vs. KI: Ein Kreativitätsspiel</h2>
+      <p>Testen Sie selbst, wer kreativer ist – der Mensch (Barbara) oder die KI? Klicken Sie auf den Button und entdecken Sie das Ergebnis!</p>
+      
+      <div class="game-section">
+        <button onclick="randomResult()">Wer ist heute kreativer? <i class="fas fa-dice"></i></button>
+        <div id="gameResult" class="game-result"></div>
+      </div>
+      
+      <div class="content-split" style="margin-top: 1.5rem;">
+        <div class="content-text">
+          <p>Dieses kleine Spiel verdeutlicht den Kern meiner Bewerbung: Die spannende Wechselwirkung zwischen menschlicher und künstlicher Kreativität.</p>
+          <p>Während KI beeindruckende Fähigkeiten in der Mustererkennung und Datenanalyse besitzt, bringen Menschen <span class="highlight">emotionale Intelligenz</span>, kulturelles Verständnis und kontextbezogene Kreativität mit.</p>
+          <p>Ich sehe meine Stärke darin, diese beiden Welten zu verbinden und das Beste aus beiden zu nutzen.</p>
+        </div>
+        <div class="content-image" style="min-height: 320px;">
+          <img src="images/robot.svg" alt="Mensch und KI" class="content-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Barbara Halat | Bewerbung zur Summer University 2025</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html> 
